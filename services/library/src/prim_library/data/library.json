@@ -6,6 +6,49 @@
       "metadata": {
         "format": "prim-profile",
         "manifest_version": "0.1",
+        "id": "primfoundation/coding-agent-harness",
+        "name": "Coding Agent Harness Prim",
+        "version": "0.1.0-dev.1",
+        "maturity": "development",
+        "description": "Durable knowledge of coding-agent environments, capabilities, constraints, evaluations, operational evidence, incidents and recovery.",
+        "license": "MIT",
+        "kinds": [
+          "coding-agent-harness"
+        ],
+        "resources": {
+          "specification": "SPEC.md",
+          "creation": "creation.json",
+          "schema": "schema/record.schema.json",
+          "template": "template.json",
+          "example": "examples/minimal/harness.json"
+        }
+      },
+      "resources": {
+        "manifest": {
+          "sha256": "3fd1c93001d25321d5e2b061796af84edb1bc3f52b87841476e4b0875f267ea4"
+        },
+        "specification": {
+          "sha256": "f5c68bd1e8ecca100176b5f39ac7d908bbcb465085e4cade516e4137925a8718"
+        },
+        "creation": {
+          "sha256": "4090483cffab1da03ba070bec773d5a701b76fb3295154da8c1a2988a267d3bb"
+        },
+        "schema": {
+          "sha256": "7baad6180e6690af9022f1b511ad6164875572412896a5bd2bb584e72d3987a1"
+        },
+        "template": {
+          "sha256": "c09e83cbdd1520cded94ae0066773bbe02d406e8d3a2b5c2a54e066e48e2a303"
+        },
+        "example": {
+          "sha256": "a5ebd7c0e7bc3b3c68f73d28f1e57ebd4f5446700d4f790b9b2c048864b05650"
+        }
+      },
+      "definition_sha256": "5e2ad881aa74e1f860daf5a31095f9854ed34a3b3b384f4b32328feeff606964"
+    },
+    {
+      "metadata": {
+        "format": "prim-profile",
+        "manifest_version": "0.1",
         "id": "primfoundation/decision",
         "name": "Decision Prim",
         "version": "0.1.0-dev.1",
@@ -199,5 +242,5 @@
       "definition_sha256": "af116d012911ce70a82338e2a2a1fde2a354434de484643d091838ab378b58b5"
     }
   ],
-  "snapshot_sha256": "a659c3a69ef9a02976d53d033c4dba60a4ae7f75511cd44082e2f1e1125a2771"
+  "snapshot_sha256": "8fed904271550f46b137c8c5f29fb8c2e496e1a3530bcbf52aa0c75f51178bc7"
 }

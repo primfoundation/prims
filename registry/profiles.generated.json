@@ -10,6 +10,37 @@
         "publisher_identity": "not_verified",
         "security_review": "not_performed"
       },
+      "location": "coding-agent-harness/PROFILE.md",
+      "manifest_sha256": "3fd1c93001d25321d5e2b061796af84edb1bc3f52b87841476e4b0875f267ea4",
+      "metadata": {
+        "description": "Durable knowledge of coding-agent environments, capabilities, constraints, evaluations, operational evidence, incidents and recovery.",
+        "format": "prim-profile",
+        "id": "primfoundation/coding-agent-harness",
+        "kinds": [
+          "coding-agent-harness"
+        ],
+        "license": "MIT",
+        "manifest_version": "0.1",
+        "maturity": "development",
+        "name": "Coding Agent Harness Prim",
+        "resources": {
+          "creation": "creation.json",
+          "example": "examples/minimal/harness.json",
+          "schema": "schema/record.schema.json",
+          "specification": "SPEC.md",
+          "template": "template.json"
+        },
+        "version": "0.1.0-dev.1"
+      }
+    },
+    {
+      "checks": {
+        "declared_resource_paths": "passed",
+        "manifest": "passed",
+        "profile_conformance": "not_checked",
+        "publisher_identity": "not_verified",
+        "security_review": "not_performed"
+      },
       "location": "decision/PROFILE.md",
       "manifest_sha256": "98cd58abfcc549139124b0dc27d0e95e51a04d0b8f871b7ed7065a458d91cc76",
       "metadata": {

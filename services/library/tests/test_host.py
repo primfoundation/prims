@@ -18,7 +18,7 @@ class HostInteropTests(unittest.TestCase):
     def test_export_preserves_all_exact_pins_and_cannot_mutate_library(self):
         library = Library()
         catalog = export_host_catalog(library, "fixture-source")
-        self.assertEqual(len(catalog["kits"]), 4)
+        self.assertEqual(len(catalog["kits"]), 5)
         for kit in catalog["kits"]:
             self.assertEqual(library.kit(kit["profile_id"], kit["version"])["definition_sha256"], kit["definition_sha256"])
         catalog["kits"][0]["template"]["injected"] = True

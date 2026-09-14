@@ -112,13 +112,27 @@ The goal is that **prim** is the default noun. Profile codes and `prim.*` repo n
 
 ---
 
+## In-repository profile packages
+
+[`coding-agent-harness`](./profiles/coding-agent-harness/PROFILE.md) stores the
+effective coding-agent environment and its evidence, evaluations, incidents and
+recovery records. It is a development JSON profile, not an executable tool or OKF
+profile. Its identity is `primfoundation/coding-agent-harness` and its existing
+source repository is `primfoundation/prim`.
+
+The newer [profile package contract](./program/PROFILE-PACKAGE.md) and D002 permit
+multiple profiles in one repository. The `prim.<shortname>` repository pattern
+below remains useful for separately hosted profiles, not a requirement to create
+a repository for each package. Existing profile identities remain unchanged.
+
 ## Adding a new profile
 
 A new domain becomes part of the Prim family when:
 
 1. It names a store and how tools cite it (kinds, gates, layout — OKF or not).
 2. It respects the category split: the file stores; tools interact; no fixed UX required.
-3. Its canonical repo is named `prim.<shortname>` under `eidos-agi`.
+3. It has an identified source location. A separate repository may use
+   `prim.<shortname>`; an in-repository package follows the profile package contract.
 4. It is linked from this family map and from the Prim README.
 
 The Prim category SPEC does not need to change for every new profile. The family map does.

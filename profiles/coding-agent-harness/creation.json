@@ -1,0 +1,101 @@
+{
+  "format": "prim-creation-kit",
+  "version": 1,
+  "authority_file": "harness.json",
+  "schema_resource": "schema",
+  "template_resource": "template",
+  "identity_field": "id",
+  "title_field": "title",
+  "rules": {
+    "unique_ids": [
+      "capabilities",
+      "components",
+      "capability_links",
+      "evidence",
+      "evaluations",
+      "evaluation_evidence",
+      "observations",
+      "incidents",
+      "procedures",
+      "changes",
+      "verifications"
+    ],
+    "references": [
+      {
+        "collection": "capability_links",
+        "field": "component_id",
+        "target": "components"
+      },
+      {
+        "collection": "capability_links",
+        "field": "capability_id",
+        "target": "capabilities"
+      },
+      {
+        "collection": "evaluations",
+        "field": "subject",
+        "target": "components"
+      },
+      {
+        "collection": "evaluation_evidence",
+        "field": "evaluation_id",
+        "target": "evaluations"
+      },
+      {
+        "collection": "evaluation_evidence",
+        "field": "evidence_id",
+        "target": "evidence"
+      },
+      {
+        "collection": "observations",
+        "field": "subject",
+        "target": "components"
+      },
+      {
+        "collection": "observations",
+        "field": "evidence_id",
+        "target": "evidence"
+      },
+      {
+        "collection": "incidents",
+        "field": "subject",
+        "target": "components"
+      },
+      {
+        "collection": "incidents",
+        "field": "evidence_id",
+        "target": "evidence"
+      },
+      {
+        "collection": "changes",
+        "field": "incident_id",
+        "target": "incidents"
+      },
+      {
+        "collection": "changes",
+        "field": "procedure_id",
+        "target": "procedures"
+      },
+      {
+        "collection": "changes",
+        "field": "evidence_id",
+        "target": "evidence"
+      },
+      {
+        "collection": "verifications",
+        "field": "change_id",
+        "target": "changes"
+      },
+      {
+        "collection": "verifications",
+        "field": "evidence_id",
+        "target": "evidence"
+      },
+      {
+        "collection": "evaluations",
+        "field": "evidence_id",
+        "target": "evidence"
+      }
+    ]
+  }
+}

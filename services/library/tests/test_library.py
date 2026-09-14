@@ -29,7 +29,7 @@ class LibraryTests(unittest.TestCase):
 
     def test_profiles_no_repository_requirement(self):
         ids = {row['id'] for row in self.library.search()['items']}
-        self.assertEqual(ids, {RESEARCH, 'primfoundation/person', 'primfoundation/decision', 'primfoundation/workbook'})
+        self.assertEqual(ids, {RESEARCH, 'primfoundation/person', 'primfoundation/decision', 'primfoundation/workbook', 'primfoundation/coding-agent-harness'})
         for row in self.library.search()['items']:
             self.assertTrue(row['creation_available'])
             self.assertNotIn('repo', self.library.get(row['id'])['metadata'])
@@ -177,6 +177,51 @@ class LibraryTests(unittest.TestCase):
         p.update(question='Which?',rationale='test',authority_as_recorded='agent:test',chosen_option='a',options=[{'id':'a','description':'A'}])
         self.assertEqual(self.library.validate('primfoundation/decision','0.1.0-dev.1',p)['status'],'passed')
         p['chosen_option']='absent';self.assertEqual(self.library.validate('primfoundation/decision','0.1.0-dev.1',p)['status'],'failed')
+
+    def test_coding_agent_harness_example_and_relations(self):
+        profile, version = 'primfoundation/coding-agent-harness', '0.1.0-dev.1'
+        root = Path(__file__).resolve().parents[3] / 'profiles/coding-agent-harness'
+        kit = self.library.kit(profile, version)
+        template = json.loads((root / 'template.json').read_text())
+        example = json.loads((root / 'examples/minimal/harness.json').read_text())
+        self.assertEqual(kit['template'], template)
+        self.assertEqual(kit['authority_file'], 'harness.json')
+        for record in [template, example]:
+            result = self.library.validate(profile, version, record)
+            self.assertEqual(result['status'], 'passed', result)
+            self.assertEqual(result['checks']['factual_accuracy'], 'not_checked')
+            self.assertEqual(result['checks']['human_review'], 'not_verified')
+        mutations = [
+            ('profile', 'other/harness'), ('profile_version', '1.0.0'),
+            ('kind', 'tool-evaluation'), ('status', 'approved'),
+        ]
+        for field, value in mutations:
+            with self.subTest(field=field):
+                self.assertEqual(self.library.validate(profile, version, {**example, field:value})['status'], 'failed')
+        for collection in ['capabilities', 'components', 'capability_links', 'evidence',
+                           'evaluations', 'evaluation_evidence', 'observations',
+                           'incidents', 'procedures', 'changes', 'verifications']:
+            record = deepcopy(example)
+            record[collection].append(deepcopy(record[collection][0]))
+            with self.subTest(collection=collection):
+                self.assertEqual(self.library.validate(profile, version, record)['status'], 'failed')
+        for collection, field in [
+            ('capability_links','component_id'), ('capability_links','capability_id'),
+            ('evaluations','subject'), ('evaluations','evidence_id'),
+            ('evaluation_evidence','evaluation_id'), ('evaluation_evidence','evidence_id'),
+            ('observations','subject'), ('observations','evidence_id'),
+            ('incidents','subject'), ('incidents','evidence_id'),
+            ('changes','incident_id'), ('changes','procedure_id'), ('changes','evidence_id'),
+            ('verifications','change_id'), ('verifications','evidence_id')]:
+            record = deepcopy(example)
+            record[collection][0][field] = 'missing'
+            with self.subTest(reference=(collection,field)):
+                self.assertEqual(self.library.validate(profile, version, record)['status'], 'failed')
+        for value in [-1, 101, 1.5, '70', None]:
+            record = deepcopy(example)
+            record['evaluations'][0]['ratings']['confidence'] = value
+            self.assertEqual(self.library.validate(profile, version, record)['status'], 'failed')
+        self.assertEqual(self.library.validate(profile, version, {**template, 'status':'observed'})['status'], 'failed')
 
     def test_workbook_profile_is_generic_and_structural(self):
         profile = 'primfoundation/workbook'

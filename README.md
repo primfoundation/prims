@@ -93,6 +93,15 @@ OKF provides the grammar ([okflify](https://github.com/eidos-agi/okflify)).
 
 See [FAMILY.md](./FAMILY.md) for composition rules and how to talk about profiles.
 
+## Coding-agent harness profile
+
+[`profiles/coding-agent-harness`](./profiles/coding-agent-harness) defines a
+development knowledge pack for coding-agent environments, constraints, evaluations,
+operational evidence and recovery records. It is registered as
+`coding-agent-harness`; its portable identity is
+`primfoundation/coding-agent-harness`. It is a JSON store, not an executable
+control plane or an OKF conformance claim.
+
 ## Language
 
 - “Send me the prim.”

@@ -15,6 +15,9 @@ import {
 } from "../src/registry.ts";
 
 resetRegistry();
+assert.equal(getType("coding-agent-harness")?.repo, "primfoundation/prim");
+assert.equal(getType("coding-agent-harness")?.okf, false);
+assert.equal(getType("coding-agent-harness")?.status, "emerging");
 
 assert.ok(listTypes().length >= 1);
 assert.ok(getType("docket"));
