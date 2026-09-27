@@ -18,9 +18,9 @@ Target active top-level repositories should be few, durable, and understandable 
 
 Active repositories currently include:
 
-- `primfoundation/prim`
-- `primfoundation/prim-web`
-- `primfoundation/prim-registry`
+- `primfoundation/prims`
+- `primfoundation/prims-web`
+- `primfoundation/prims-registry`
 - `primfoundation/prim.workbook`
 - `primfoundation/prims-desktop`
 - `primfoundation/prims-browsers`
@@ -41,7 +41,7 @@ That makes repo names leak historical implementation decisions into the architec
 
 ## Target model
 
-### 1. `primfoundation/prim` — standards and definition source
+### 1. `primfoundation/prims` — standards and definition source
 
 Keep.
 
@@ -100,7 +100,7 @@ prims-hub/
 Migration sources:
 
 - `prim-web` → website/history/base repository;
-- `prim-registry` → registry compatibility/API behavior;
+- `prims-registry` → registry compatibility/API behavior;
 - hosted Library/MCP runtime pieces from `prim/services/library` → Hub runtime, while portable contracts/fixtures remain standards-owned;
 - ranking implementation from the current Library alpha.
 
@@ -158,7 +158,7 @@ Do not hide product-specific deployment logic here.
 
 ## Repositories to consolidate/archive after cutover
 
-### `prim-registry`
+### `prims-registry`
 
 Merge runtime contract/tests into `prims-hub`. Preserve `registry.prims.sh` as compatibility route if useful. Archive only after client inventory, parity, release evidence, rollback, and successor notice.
 
