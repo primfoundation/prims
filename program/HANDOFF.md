@@ -2,7 +2,7 @@
 
 ## GitHub execution is now established
 
-[Issue #9](https://github.com/primfoundation/prim/issues/9) links all 26 package trackers and 16 executable tasks. Read live issues before selecting work; `github-execution.json` is a mapping and initial snapshot, not live state. [TASK-SYSTEM.md](TASK-SYSTEM.md) defines claiming, handoff, evidence, closure and staged Project Prim adoption. Start with #50/#51/#53/#55/#49. Projects access is now verified through Fleet and the laptop GitHub CLI after user authorization. [Project 1](https://github.com/orgs/primfoundation/projects/1) contains all 42 mapped issues; #64 retains receipts. Project fields are manually reconciled, not continuously synchronized. No unattended worker or Project exporter is claimed.
+[Issue #9](https://github.com/primfoundation/prims/issues/9) links all 26 package trackers and 16 executable tasks. Read live issues before selecting work; `github-execution.json` is a mapping and initial snapshot, not live state. [TASK-SYSTEM.md](TASK-SYSTEM.md) defines claiming, handoff, evidence, closure and staged Project Prim adoption. Start with #50/#51/#53/#55/#49. Projects access is now verified through Fleet and the laptop GitHub CLI after user authorization. [Project 1](https://github.com/orgs/primfoundation/projects/1) contains all 42 mapped issues; #64 retains receipts. Project fields are manually reconciled, not continuously synchronized. No unattended worker or Project exporter is claimed.
 
 ## Current delivery target and recovered Mac access
 
@@ -81,7 +81,7 @@ and all 26 delivery packages remain unchanged.
 
 ## Current state
 
-The Foundation bootstrap (#5), ORF compatibility (#6), Library/MCP alpha (#7) and sanitized Workbook import (#10) are merged into `primfoundation/prim`. The reorganization work (#8) is merged at `cc640009089cd8663021fbd6a8211c7a605c68ea`. September 8 Hub and Primboard release work is recorded in `evidence/2026-09-08-release.json`.
+The Foundation bootstrap (#5), ORF compatibility (#6), Library/MCP alpha (#7) and sanitized Workbook import (#10) are merged into `primfoundation/prims`. The reorganization work (#8) is merged at `cc640009089cd8663021fbd6a8211c7a605c68ea`. September 8 Hub and Primboard release work is recorded in `evidence/2026-09-08-release.json`.
 
 Four development profiles are available through generic local creation tooling: Research, Person, Decision and Workbook. Source/workbook provenance is preserved; no customer-history import or stable-standard release is implied. All 17 workstreams, seven milestones and 79 requirement IDs remain. Whole-life contexts, diagnostics, ingestion, authority/privacy, governance, community, sustainability and the remaining diverse reference cases are still obligations.
 
