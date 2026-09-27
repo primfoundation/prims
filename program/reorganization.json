@@ -133,7 +133,7 @@
       "source_import_status": "merged in successor; deployment/real-account/route gates open"
     },
     {
-      "source": "primfoundation/logins-prims-sh",
+      "source": "primfoundation/prims-sso (archived: logins-prims-sh)",
       "target": "primfoundation/prims-browsers:cloud/apps/login",
       "class": "product-route-service",
       "lifecycle": "migrating",
