@@ -68,7 +68,7 @@ Examples: `prim.ocsf`, `prim.brand`, `prim.osf`, `prim.orf`. There is no `prim.s
 
 | Repo | Domain |
 |------|--------|
-| [prim](https://github.com/primfoundation/prim) | Category identity (this repo) |
+| [prim](https://github.com/primfoundation/prims) | Category identity (this repo) |
 | prim-web | Public web host / views (not yet public) |
 | prim-mac | Mac document host — Prim.app (not yet public) |
 | prim.emf | Human intent + durable memory (not yet public) |
