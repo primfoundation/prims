@@ -51,7 +51,7 @@ Actions:
 - add a repository lifecycle field: `active`, `migrating`, `compatibility`, `candidate-archive`, `archived`;
 - create a machine-readable migration ledger (`program/reorganization.json`);
 - reconcile the open stacked Foundation PRs #5–#8 before allowing another competing top-level architecture branch;
-- preserve open product PRs in `prims-desktop`, `prim.workbook`, `prim-web`, and `prim-registry`; none may vanish during consolidation.
+- preserve open product PRs in `prims-desktop`, `prim.workbook`, `prim-web`, and `prims-registry`; none may vanish during consolidation.
 
 Completion: a replacement maintainer can identify the intended destination and blockers for every current Foundation repo and every discovered legacy Prim incubator.
 
@@ -139,7 +139,7 @@ Actions:
 - verify redirects, docs, static assets, demos still intentionally supported, API responses, MCP protocol behavior, security headers, accessibility, mobile layout, and cache semantics;
 - cut `prims.sh` to the unified Worker only after preview acceptance;
 - expose canonical `mcp.prims.sh/mcp` alias if desired while `/mcp` remains valid;
-- absorb `prim-registry` behavior into Hub and preserve `registry.prims.sh` as compatibility routing;
+- absorb `prims-registry` behavior into Hub and preserve `registry.prims.sh` as compatibility routing;
 - close/supersede the old `prim-web` Pages/Railway migration PR only after the new origin is proven;
 - retain old Worker/Pages deployment IDs and rollback instructions through the cutover window.
 
@@ -370,7 +370,7 @@ No generated “100% complete” score. Implementation, tests, review, release, 
 | `.github` | `.github` | keep + strengthen | never by this plan |
 | `prim` | `prim` | keep; absorb standards/profile definitions | never by this plan |
 | `prim-web` | `prims-hub` | audit then rename/rework preferred | new Hub preview + cutover + history/security review |
-| `prim-registry` | `prims-hub` | merge behavior/tests; keep compatibility hostname | production route parity + client inventory |
+| `prims-registry` | `prims-hub` | merge behavior/tests; keep compatibility hostname | production route parity + client inventory |
 | `prim.workbook` | `prim/profiles/workbook` (+ viewer destination as appropriate) | migrate after privacy/history audit | old consumers + public scrub + successor proven |
 | `prims-desktop` | `prims-desktop` | keep + generic-host refactor | never by this plan |
 | `prims-browsers` | `prims-browsers` | keep + absorb cloud route apps | never by this plan |
@@ -386,7 +386,7 @@ At planning time, Foundation has open work that must be reconciled rather than e
 - `prims-desktop` PRs #2, #3, #4, #6 contain product work with explicit Mac proof gates;
 - `prim.workbook` PR #1 contains public scrub/viewer work and warns about private customer history;
 - `prim-web` PR #1 is the older Pages migration plan;
-- `prim-registry` PR #1 pins the existing Worker/domain plan.
+- `prims-registry` PR #1 pins the existing Worker/domain plan.
 
 Every destination migration must decide whether each PR is merged, superseded with preserved commits, or closed with a successor reference. “Old architecture” is not permission to lose useful work.
 
