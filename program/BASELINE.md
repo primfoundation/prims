@@ -2,7 +2,7 @@
 
 ## Repository state
 
-The GitHub connector returned `primfoundation/prim` main at `08760405325ca3f9c9b63648c7398ffc4c96e831`, tree `87a5d34f73a41652c77e1db6d063e0b482af2d10`. The open-PR collection returned no entries at inspection time. Other observed branches were `sdk-python` at `1b4b03e68eeb7147248f29cd517e0e9fe998893b` and `prims/zeroshot-connector` at `364e34325dd648be05f1d48e96683fb0375d559c`. They are untouched.
+The GitHub connector returned `primfoundation/prims` main at `08760405325ca3f9c9b63648c7398ffc4c96e831`, tree `87a5d34f73a41652c77e1db6d063e0b482af2d10`. The open-PR collection returned no entries at inspection time. Other observed branches were `sdk-python` at `1b4b03e68eeb7147248f29cd517e0e9fe998893b` and `prims/zeroshot-connector` at `364e34325dd648be05f1d48e96683fb0375d559c`. They are untouched.
 
 Existing assets include SPEC, INTENTION, CONTRIBUTING, FAMILY, the registry, TypeScript SDK/CLI, viewer, person profile, and `docs/opf/product.json`. Existing OPF planning material remains untouched; reconciliation is open. The new program does not claim to replace or complete that plan.
 
