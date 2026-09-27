@@ -4,7 +4,7 @@
 
 Status: selected within the authorized implementation.
 
-Use `primfoundation/prim` as the intended durable home. The plan is machine-readable; the roadmap is generated. PRs reference requirement IDs. JSON/Markdown are the bootstrap record, not a new Project Prim certification. The initial GitHub authorization blocker is resolved; the preserved local artifacts remain the historical baseline.
+Use `primfoundation/prims` as the intended durable home. The plan is machine-readable; the roadmap is generated. PRs reference requirement IDs. JSON/Markdown are the bootstrap record, not a new Project Prim certification. The initial GitHub authorization blocker is resolved; the preserved local artifacts remain the historical baseline.
 
 ## D002 — Publishable package, not repository
 
