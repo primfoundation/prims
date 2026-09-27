@@ -15,7 +15,7 @@ The later September 8 increments are in `evidence/2026-09-08-portable-delivery.j
 
 ## Execution queue
 
-[GitHub tracker #9](https://github.com/primfoundation/prim/issues/9) now links the 26 delivery packages and a bounded executable queue. [TASK-SYSTEM.md](TASK-SYSTEM.md) defines operational ownership, evidence and Project Prim adoption; `github-execution.json` maps issues to the unchanged canonical requirements. GitHub owns task state; `plan.json` owns requirement state.
+[GitHub tracker #9](https://github.com/primfoundation/prims/issues/9) now links the 26 delivery packages and a bounded executable queue. [TASK-SYSTEM.md](TASK-SYSTEM.md) defines operational ownership, evidence and Project Prim adoption; `github-execution.json` maps issues to the unchanged canonical requirements. GitHub owns task state; `plan.json` owns requirement state.
 
 ## One record, several views
 
