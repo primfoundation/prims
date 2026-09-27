@@ -36,7 +36,7 @@
       "notes": "Category spec, portable profiles, compatibility, conformance, publication contracts and program record."
     },
     {
-      "source": "primfoundation/prim-web",
+      "source": "primfoundation/prims-web",
       "target": "primfoundation/prims-hub",
       "class": "public-platform",
       "lifecycle": "migrating",
@@ -53,7 +53,7 @@
       "merged_preview_pr": 5
     },
     {
-      "source": "primfoundation/prim-registry",
+      "source": "primfoundation/prims-registry",
       "target": "primfoundation/prims-hub",
       "class": "route-service",
       "lifecycle": "migrating",
