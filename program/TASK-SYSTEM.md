@@ -2,7 +2,7 @@
 
 Created September 12, 2026 under the user's instruction to establish GitHub execution and staged use of Prims. Requirements: PRG-002/003/005, LIFE-002, AUTH-001/002/003/004.
 
-[Start with the execution tracker](https://github.com/primfoundation/prim/issues/9).
+[Start with the execution tracker](https://github.com/primfoundation/prims/issues/9).
 
 ## Authority
 
@@ -52,32 +52,32 @@ Earlier narrative/evidence references calling native reconciliation D95-05 were 
 
 | Package | Issue | Wave | Requirements |
 | --- | --- | --- | --- |
-| D95-01 | [Recover source and reconcile current work](https://github.com/primfoundation/prim/issues/23) | 0 | PRG-001, PRG-004, PRG-006, RELENG-001 |
-| D95-02 | [Make delivery and evidence mechanically checkable](https://github.com/primfoundation/prim/issues/24) | 0 | PRG-002, PRG-003, PRG-005 |
-| D95-03 | [Finish the small common contract](https://github.com/primfoundation/prim/issues/25) | 1 | CORE-001, CORE-002, CORE-004, REL-004 |
-| D95-04 | [Transfer complete packs and preserve attachments](https://github.com/primfoundation/prim/issues/26) | 1 | CORE-003, HUM-001 |
-| D95-05 | [Complete the Research lifecycle](https://github.com/primfoundation/prim/issues/27) | 2 | RES-001, RES-002, RES-003 |
-| D95-06 | [Prove independent Research exchange](https://github.com/primfoundation/prim/issues/28) | 5 | RES-004, INTEROP-004 |
-| D95-07 | [Complete the six reference cases and context map](https://github.com/primfoundation/prim/issues/29) | 1 | LIFE-001, LIFE-002 |
-| D95-08 | [Handle identity, composition and concurrent history](https://github.com/primfoundation/prim/issues/30) | 2 | REL-001, REL-002, REL-003 |
-| D95-09 | [Make profile authoring self-service](https://github.com/primfoundation/prim/issues/31) | 2 | PUB-001, PUB-004, PUB-005, DEV-002 |
-| D95-10 | [Authenticate publishing and remote resolution](https://github.com/primfoundation/prim/issues/32) | 4 | PUB-002, PUB-003, PUB-006, DIR-002 |
-| D95-11 | [Finish one Hub discovery and authoring surface](https://github.com/primfoundation/prim/issues/33) | 2 | DIR-001, DIR-003, DIR-005, DEV-005 |
-| D95-12 | [Operate moderation and honest adoption signals](https://github.com/primfoundation/prim/issues/34) | 4 | DIR-004, DIR-006, DIR-007 |
-| D95-13 | [Release supported packages and clients](https://github.com/primfoundation/prim/issues/35) | 2 | DEV-001, DEV-004, DEV-006, RELENG-002 |
-| D95-14 | [Accept Primboard as a trustworthy daily product](https://github.com/primfoundation/prim/issues/36) | 3 | HUM-004 |
-| D95-15 | [Recover and ship the generic Desktop host](https://github.com/primfoundation/prim/issues/37) | 3 | HUM-002 |
-| D95-16 | [Prove accessibility and representative environments](https://github.com/primfoundation/prim/issues/38) | 3 | HUM-003, LIFE-004 |
-| D95-17 | [Finish trustworthy local and remote ingestion](https://github.com/primfoundation/prim/issues/39) | 5 | ING-001, ING-002, ING-003, ING-004 |
-| D95-18 | [Enforce bounded agent operations](https://github.com/primfoundation/prim/issues/40) | 2 | DEV-003, AUTH-001, AUTH-002, AUTH-003, AUTH-004 |
-| D95-19 | [Close security and private-data failure modes](https://github.com/primfoundation/prim/issues/41) | 1 | SEC-001, SEC-002, SEC-003, SEC-004 |
-| D95-20 | [Migrate incubators and prove compatibility](https://github.com/primfoundation/prim/issues/42) | 5 | INTEROP-001, INTEROP-002, INTEROP-003, RELENG-003 |
-| D95-21 | [Cut the public Hub over with verified ownership](https://github.com/primfoundation/prim/issues/43) | 4 | OPS-001, OPS-005 |
-| D95-22 | [Prove Browsers and consolidate its live services](https://github.com/primfoundation/prim/issues/44) | 4 | OPS-002 |
-| D95-23 | [Make recovery, maintenance and free operation sustainable](https://github.com/primfoundation/prim/issues/45) | 1 | OPS-003, OPS-004, RELENG-004 |
-| D95-24 | [Establish actual stewardship and policy ownership](https://github.com/primfoundation/prim/issues/46) | 1 | GOV-001, GOV-002, GOV-003, GOV-004 |
-| D95-25 | [Deliver useful diagnostics, onboarding and support](https://github.com/primfoundation/prim/issues/47) | 5 | LIFE-003, COMM-001, COMM-002, COMM-005 |
-| D95-26 | [Run independent acceptance and close the release](https://github.com/primfoundation/prim/issues/48) | 6 | COMM-003, COMM-004 |
+| D95-01 | [Recover source and reconcile current work](https://github.com/primfoundation/prims/issues/23) | 0 | PRG-001, PRG-004, PRG-006, RELENG-001 |
+| D95-02 | [Make delivery and evidence mechanically checkable](https://github.com/primfoundation/prims/issues/24) | 0 | PRG-002, PRG-003, PRG-005 |
+| D95-03 | [Finish the small common contract](https://github.com/primfoundation/prims/issues/25) | 1 | CORE-001, CORE-002, CORE-004, REL-004 |
+| D95-04 | [Transfer complete packs and preserve attachments](https://github.com/primfoundation/prims/issues/26) | 1 | CORE-003, HUM-001 |
+| D95-05 | [Complete the Research lifecycle](https://github.com/primfoundation/prims/issues/27) | 2 | RES-001, RES-002, RES-003 |
+| D95-06 | [Prove independent Research exchange](https://github.com/primfoundation/prims/issues/28) | 5 | RES-004, INTEROP-004 |
+| D95-07 | [Complete the six reference cases and context map](https://github.com/primfoundation/prims/issues/29) | 1 | LIFE-001, LIFE-002 |
+| D95-08 | [Handle identity, composition and concurrent history](https://github.com/primfoundation/prims/issues/30) | 2 | REL-001, REL-002, REL-003 |
+| D95-09 | [Make profile authoring self-service](https://github.com/primfoundation/prims/issues/31) | 2 | PUB-001, PUB-004, PUB-005, DEV-002 |
+| D95-10 | [Authenticate publishing and remote resolution](https://github.com/primfoundation/prims/issues/32) | 4 | PUB-002, PUB-003, PUB-006, DIR-002 |
+| D95-11 | [Finish one Hub discovery and authoring surface](https://github.com/primfoundation/prims/issues/33) | 2 | DIR-001, DIR-003, DIR-005, DEV-005 |
+| D95-12 | [Operate moderation and honest adoption signals](https://github.com/primfoundation/prims/issues/34) | 4 | DIR-004, DIR-006, DIR-007 |
+| D95-13 | [Release supported packages and clients](https://github.com/primfoundation/prims/issues/35) | 2 | DEV-001, DEV-004, DEV-006, RELENG-002 |
+| D95-14 | [Accept Primboard as a trustworthy daily product](https://github.com/primfoundation/prims/issues/36) | 3 | HUM-004 |
+| D95-15 | [Recover and ship the generic Desktop host](https://github.com/primfoundation/prims/issues/37) | 3 | HUM-002 |
+| D95-16 | [Prove accessibility and representative environments](https://github.com/primfoundation/prims/issues/38) | 3 | HUM-003, LIFE-004 |
+| D95-17 | [Finish trustworthy local and remote ingestion](https://github.com/primfoundation/prims/issues/39) | 5 | ING-001, ING-002, ING-003, ING-004 |
+| D95-18 | [Enforce bounded agent operations](https://github.com/primfoundation/prims/issues/40) | 2 | DEV-003, AUTH-001, AUTH-002, AUTH-003, AUTH-004 |
+| D95-19 | [Close security and private-data failure modes](https://github.com/primfoundation/prims/issues/41) | 1 | SEC-001, SEC-002, SEC-003, SEC-004 |
+| D95-20 | [Migrate incubators and prove compatibility](https://github.com/primfoundation/prims/issues/42) | 5 | INTEROP-001, INTEROP-002, INTEROP-003, RELENG-003 |
+| D95-21 | [Cut the public Hub over with verified ownership](https://github.com/primfoundation/prims/issues/43) | 4 | OPS-001, OPS-005 |
+| D95-22 | [Prove Browsers and consolidate its live services](https://github.com/primfoundation/prims/issues/44) | 4 | OPS-002 |
+| D95-23 | [Make recovery, maintenance and free operation sustainable](https://github.com/primfoundation/prims/issues/45) | 1 | OPS-003, OPS-004, RELENG-004 |
+| D95-24 | [Establish actual stewardship and policy ownership](https://github.com/primfoundation/prims/issues/46) | 1 | GOV-001, GOV-002, GOV-003, GOV-004 |
+| D95-25 | [Deliver useful diagnostics, onboarding and support](https://github.com/primfoundation/prims/issues/47) | 5 | LIFE-003, COMM-001, COMM-002, COMM-005 |
+| D95-26 | [Run independent acceptance and close the release](https://github.com/primfoundation/prims/issues/48) | 6 | COMM-003, COMM-004 |
 
 ## Executable task index
 
@@ -85,21 +85,21 @@ This is the initial ordering, not live state. Follow the issue for current statu
 
 | Task | Issue | Dependencies | Implementation repository |
 | --- | --- | --- | --- |
-| EXEC-01 | [Establish the scored release baseline and repair stale summaries](https://github.com/primfoundation/prim/issues/49) | Package entry gate | primfoundation/prim |
-| EXEC-02 | [Implement native complete-pack import, edit and export](https://github.com/primfoundation/prim/issues/50) | Package entry gate | primfoundation/prims-paste-desktop |
-| EXEC-03 | [Diagnose and complete existing-key encrypted snapshot restore](https://github.com/primfoundation/prim/issues/51) | Package entry gate | primfoundation/prims-paste-desktop |
-| EXEC-04 | [Reconcile richer Primboard UI and prove a safe installed upgrade](https://github.com/primfoundation/prim/issues/52) | EXEC-02, EXEC-03 | primfoundation/prims-paste-desktop |
-| EXEC-05 | [Build the Research capture, challenge and revision demonstration](https://github.com/primfoundation/prim/issues/53) | Package entry gate | primfoundation/prim |
-| EXEC-06 | [Prove the complete investigation across web, native and offline readers](https://github.com/primfoundation/prim/issues/54) | EXEC-02, EXEC-04, EXEC-05 | primfoundation/prim |
-| EXEC-07 | [Specify Project work items using Foundation delivery as the reference case](https://github.com/primfoundation/prim/issues/55) | Package entry gate | primfoundation/prim |
-| EXEC-08 | [Export GitHub execution records into a versioned Project Prim](https://github.com/primfoundation/prim/issues/56) | EXEC-07 | primfoundation/prim |
-| EXEC-09 | [Prove agent handoff and specify conflict-safe Project writeback](https://github.com/primfoundation/prim/issues/57) | EXEC-08 | primfoundation/prim |
-| EXEC-10 | [Resolve Desktop source lineage and the 27 legacy host assertions](https://github.com/primfoundation/prim/issues/58) | Package entry gate | primfoundation/prims-desktop |
-| EXEC-11 | [Audit and repair the self-service Hub entry journey](https://github.com/primfoundation/prim/issues/59) | Package entry gate | primfoundation/prim-web |
-| EXEC-12 | [Implement and test authenticated publisher and namespace lifecycle](https://github.com/primfoundation/prim/issues/60) | Package entry gate | primfoundation/prim |
-| EXEC-13 | [Prepare and execute real Browsers login and isolation acceptance](https://github.com/primfoundation/prim/issues/61) | Package entry gate | primfoundation/prims-browsers |
-| EXEC-14 | [Prepare the operator and replacement-maintainer recovery rehearsal](https://github.com/primfoundation/prim/issues/62) | Package entry gate | primfoundation/prim |
-| EXEC-15 | [Prepare independent usability and release evidence package](https://github.com/primfoundation/prim/issues/63) | EXEC-06, EXEC-11, EXEC-14 | primfoundation/prim |
-| EXEC-16 | [Add a GitHub Projects board when project-scoped access is available](https://github.com/primfoundation/prim/issues/64) | Package entry gate | primfoundation/prim |
+| EXEC-01 | [Establish the scored release baseline and repair stale summaries](https://github.com/primfoundation/prims/issues/49) | Package entry gate | primfoundation/prims |
+| EXEC-02 | [Implement native complete-pack import, edit and export](https://github.com/primfoundation/prims/issues/50) | Package entry gate | primfoundation/prims-paste-desktop |
+| EXEC-03 | [Diagnose and complete existing-key encrypted snapshot restore](https://github.com/primfoundation/prims/issues/51) | Package entry gate | primfoundation/prims-paste-desktop |
+| EXEC-04 | [Reconcile richer Primboard UI and prove a safe installed upgrade](https://github.com/primfoundation/prims/issues/52) | EXEC-02, EXEC-03 | primfoundation/prims-paste-desktop |
+| EXEC-05 | [Build the Research capture, challenge and revision demonstration](https://github.com/primfoundation/prims/issues/53) | Package entry gate | primfoundation/prims |
+| EXEC-06 | [Prove the complete investigation across web, native and offline readers](https://github.com/primfoundation/prims/issues/54) | EXEC-02, EXEC-04, EXEC-05 | primfoundation/prims |
+| EXEC-07 | [Specify Project work items using Foundation delivery as the reference case](https://github.com/primfoundation/prims/issues/55) | Package entry gate | primfoundation/prims |
+| EXEC-08 | [Export GitHub execution records into a versioned Project Prim](https://github.com/primfoundation/prims/issues/56) | EXEC-07 | primfoundation/prims |
+| EXEC-09 | [Prove agent handoff and specify conflict-safe Project writeback](https://github.com/primfoundation/prims/issues/57) | EXEC-08 | primfoundation/prims |
+| EXEC-10 | [Resolve Desktop source lineage and the 27 legacy host assertions](https://github.com/primfoundation/prims/issues/58) | Package entry gate | primfoundation/prims-desktop |
+| EXEC-11 | [Audit and repair the self-service Hub entry journey](https://github.com/primfoundation/prims/issues/59) | Package entry gate | primfoundation/prims-web |
+| EXEC-12 | [Implement and test authenticated publisher and namespace lifecycle](https://github.com/primfoundation/prims/issues/60) | Package entry gate | primfoundation/prims |
+| EXEC-13 | [Prepare and execute real Browsers login and isolation acceptance](https://github.com/primfoundation/prims/issues/61) | Package entry gate | primfoundation/prims-browsers |
+| EXEC-14 | [Prepare the operator and replacement-maintainer recovery rehearsal](https://github.com/primfoundation/prims/issues/62) | Package entry gate | primfoundation/prims |
+| EXEC-15 | [Prepare independent usability and release evidence package](https://github.com/primfoundation/prims/issues/63) | EXEC-06, EXEC-11, EXEC-14 | primfoundation/prims |
+| EXEC-16 | [Add a GitHub Projects board when project-scoped access is available](https://github.com/primfoundation/prims/issues/64) | Package entry gate | primfoundation/prims |
 
 The Project has All work, Execution board, Ready now, Blocked and waiting, and Packages views. Field updates were tested and restored. [Execution evidence](evidence/2026-09-12-github-project.json) records exact receipts and test limits.
