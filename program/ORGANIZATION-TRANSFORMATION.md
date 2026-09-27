@@ -247,7 +247,7 @@ Goal: one browser product, not separate repos for product-specific URLs.
 Keep `prims-browsers`; absorb:
 
 - `browsers-prims-sh` as cloud/gateway app;
-- `logins-prims-sh` as cloud/login while the identity remains browser-specific.
+- `prims-sso` (ex `logins-prims-sh`) as cloud/login while the identity remains browser-specific.
 
 Preserve `login.prims.sh`, `browsers.prims.sh`, shared cookie behavior, current Cloudflare bindings, and Authentik/machine gateway boundaries during migration.
 
@@ -375,7 +375,7 @@ No generated “100% complete” score. Implementation, tests, review, release, 
 | `prims-desktop` | `prims-desktop` | keep + generic-host refactor | never by this plan |
 | `prims-browsers` | `prims-browsers` | keep + absorb cloud route apps | never by this plan |
 | `browsers-prims-sh` | `prims-browsers` | merge cloud gateway | live domain + session + jar acceptance |
-| `logins-prims-sh` | `prims-browsers` | merge browser login unless identity scope changes deliberately | Apple login/session/domain acceptance |
+| `prims-sso` (ex `logins-prims-sh`) | `prims-browsers` | merge browser login unless identity scope changes deliberately | Apple login/session/domain acceptance |
 | `prims-paste-desktop` | `primboard` | keep product, stabilize, then repo rename | this repo is successor; old slug redirects, runtime IDs unchanged |
 
 ## Open PR preservation
