@@ -41,7 +41,7 @@ Systematically inventory stale repository/package/homepage links during each pro
 
 Current reference tools and tests do not equal two independently developed implementations. Stable claims remain gated on cross-implementation fixtures and unknown-field preservation.
 
-## `prims-hub` target / current `prim-web` + `prim-registry` + Library MCP
+## `prims-hub` target / current `prim-web` + `prims-registry` + Library MCP
 
 ### DEBT — public Foundation currently fragmented by implementation layer
 
@@ -185,7 +185,7 @@ Normative workbook/worksheet/measure/metric definitions should move to `prim`; d
 
 Browser-local drag/drop behavior must prove nothing uploads unexpectedly; add network-negative tests and malicious archive bounds if kept.
 
-## `prim-registry`
+## `prims-registry`
 
 ### DEBT — README/runtime reality drift
 
