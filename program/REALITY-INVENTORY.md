@@ -9,9 +9,9 @@ Status: pre-execution point-in-time checkpoint for Wave 0. This records observed
 
 | Repository | Visibility | Observed default head | Current role | Target direction |
 | --- | --- | --- | --- | --- |
-| `primfoundation/prim` | public | `08760405325ca3f9c9b63648c7398ffc4c96e831` | category/spec/registry/SDK/profile incubation | keep as standards/profile/conformance source |
-| `primfoundation/prim-web` | private | `02add4e6c739d9152ade1696e3103492e62e097f` | current website/history | audit; preferred evolution/rename into `prims-hub` |
-| `primfoundation/prim-registry` | private | `7dd77093d789f0f6317e21e9104a5d346353d3e2` | Cloudflare registry mirror | fold runtime into Hub; preserve compatibility route |
+| `primfoundation/prims` | public | `08760405325ca3f9c9b63648c7398ffc4c96e831` | category/spec/registry/SDK/profile incubation | keep as standards/profile/conformance source |
+| `primfoundation/prims-web` | private | `02add4e6c739d9152ade1696e3103492e62e097f` | current website/history | audit; preferred evolution/rename into `prims-hub` |
+| `primfoundation/prims-registry` | private | `7dd77093d789f0f6317e21e9104a5d346353d3e2` | Cloudflare registry mirror | fold runtime into Hub; preserve compatibility route |
 | `primfoundation/prim.workbook` | public | `b4376fcf3332eaadf1d51c5396e924c41f17d6e7` | workbook/worksheet/measure/metric profile experiment | import sanitized profile semantics into `prim`; archive only after privacy/consumer proof |
 | `primfoundation/prims-desktop` | public | `956233b38bf9fdc4565c86b76a95965fe69c356d` | signed desktop host/connectors | keep; refactor toward generic profile hosting |
 | `primfoundation/prims-browsers` | public | `2fd507bc0619c6bc0da0098bbe9334c951668a91` | browser sandbox product | keep; absorb login/gateway cloud surfaces |
@@ -20,20 +20,20 @@ Status: pre-execution point-in-time checkpoint for Wave 0. This records observed
 | `primfoundation/prims-paste-desktop` | public | `25d2641443c1e9d4b55b2651c18188a378a3b166` | Primboard product under historical repo slug | stabilize, then rename repo to `primboard`; preserve runtime identities |
 | `primfoundation/.github` | public | `6e9911abe205b4c8b8e89751bc916b23954f3801` | organization profile only | keep; add defaults/lifecycle/governance carefully |
 
-Observed branch metadata for sampled main branches (`prim`, `prims-desktop`, `prim-web`, `prim-registry`, `prim.workbook`, `prims-browsers`, `.github`) reported branch protection disabled. This is an operational/governance gap to address through a reviewed organization policy; it is not changed by the transformation planning branch.
+Observed branch metadata for sampled main branches (`prim`, `prims-desktop`, `prim-web`, `prims-registry`, `prim.workbook`, `prims-browsers`, `.github`) reported branch protection disabled. This is an operational/governance gap to address through a reviewed organization policy; it is not changed by the transformation planning branch.
 
 ## Open pull requests observed
 
 Existing work is migration input, not disposable legacy.
 
-### `primfoundation/prim`
+### `primfoundation/prims`
 
 - #5 — Foundation program bootstrap and repository-independent profile discovery.
 - #6 — ORF compatibility baseline and loss-aware Research inspection.
 - #7 — Foundation Library MCP, definition-driven creation, Popular/Trending.
 - #8 — organization transformation target / Cloudflare and repository reorganization (this branch).
 
-### `primfoundation/prim-web`
+### `primfoundation/prims-web`
 
 - #1 — older Cloudflare Pages migration proposal; preserve its route/header discoveries while superseding deployment architecture only after the Worker preview proves better.
 - #5 — G2 Cloudflare-native Prims Hub preview. CI run `34074018249` passed typecheck/tests and a Wrangler Worker + Static Assets dry build. No Cloudflare deployment is inferred.
@@ -61,7 +61,7 @@ Existing work is migration input, not disposable legacy.
 
 - #1 — sanitizes Greenmark/Cerebro references and replaces them with fictional Acme data. Head `8e997f0e349d788c56722ea8bd0c3d0afbdb99e5`. The PR itself warns that repository history must be reviewed before visibility/archive decisions. Any standards import must use sanitized semantics/fixtures with explicit provenance rather than copying sensitive history.
 
-### `primfoundation/prim-registry`
+### `primfoundation/prims-registry`
 
 - #1 — Cloudflare account/custom-domain configuration. Preserve the intended `registry.prims.sh` compatibility surface while moving runtime responsibility into Hub.
 
