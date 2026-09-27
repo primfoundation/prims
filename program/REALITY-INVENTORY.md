@@ -16,7 +16,7 @@ Status: pre-execution point-in-time checkpoint for Wave 0. This records observed
 | `primfoundation/prims-desktop` | public | `956233b38bf9fdc4565c86b76a95965fe69c356d` | signed desktop host/connectors | keep; refactor toward generic profile hosting |
 | `primfoundation/prims-browsers` | public | `2fd507bc0619c6bc0da0098bbe9334c951668a91` | browser sandbox product | keep; absorb login/gateway cloud surfaces |
 | `primfoundation/browsers-prims-sh` | private | `4046cff490f13766dda8a33367f0ea1ac04397c5` | Browsers gateway Worker | migrate to `prims-browsers/cloud/apps/gateway`, then compatibility/archive |
-| `primfoundation/logins-prims-sh` | private | `15abc2716afddc8c127d25cd84630146442bd299` | Apple login Worker for Browsers | migrate to `prims-browsers/cloud/apps/login`, then compatibility/archive |
+| `primfoundation/prims-sso (archived: logins-prims-sh)` | private | `15abc2716afddc8c127d25cd84630146442bd299` | Apple login Worker for Browsers | migrate to `prims-browsers/cloud/apps/login`, then compatibility/archive |
 | `primfoundation/prims-paste-desktop` | public | `25d2641443c1e9d4b55b2651c18188a378a3b166` | Primboard product under historical repo slug | stabilize, then rename repo to `primboard`; preserve runtime identities |
 | `primfoundation/.github` | public | `6e9911abe205b4c8b8e89751bc916b23954f3801` | organization profile only | keep; add defaults/lifecycle/governance carefully |
 
