@@ -25,7 +25,7 @@ Active repositories currently include:
 - `primfoundation/prims-desktop`
 - `primfoundation/prims-browsers`
 - `primfoundation/browsers-prims-sh`
-- `primfoundation/logins-prims-sh`
+- `primfoundation/prims-sso (archived: logins-prims-sh)`
 - `primfoundation/prims-paste-desktop` — user-facing product is now **Primboard**
 - `primfoundation/.github`
 
@@ -117,7 +117,7 @@ Keep, and absorb product-specific cloud door infrastructure.
 Move/merge:
 
 - `browsers-prims-sh` → `prims-browsers/cloud/gateway` (or equivalent app boundary);
-- `logins-prims-sh` → `prims-browsers/cloud/login` while the login remains browser-specific.
+- `prims-sso` (ex `logins-prims-sh`) → `prims-browsers/cloud/login` while the login remains browser-specific.
 
 Reason: those Workers exist to operate Prims Browsers; route-specific repositories create deployment sprawl and duplicate assets/session code.
 
@@ -170,7 +170,7 @@ Move normative workbook/worksheet/measure/metric profile assets under `prim/prof
 
 Merge gateway into `prims-browsers`, preserve live domain/session/container behavior, then archive with successor notice.
 
-### `logins-prims-sh`
+### `prims-sso` (ex `logins-prims-sh`)
 
 Merge into `prims-browsers` unless its identity role is deliberately broadened later. Preserve Apple callback and shared-cookie behavior before archive.
 
