@@ -14,7 +14,7 @@ The Hub owns discovery, routing, public metadata, publisher relationships, popul
 
 ## Why Cloudflare
 
-The existing `prims.sh` domain and several Prim services already target the same Cloudflare account. `prims-registry` is already a Worker with a `registry.prims.sh` custom domain. `logins-prims-sh` and `browsers-prims-sh` are also Workers. A prior `prim-web` PR prepared the website for Cloudflare Pages.
+The existing `prims.sh` domain and several Prim services already target the same Cloudflare account. `prims-registry` is already a Worker with a `registry.prims.sh` custom domain. `prims-sso` (ex `logins-prims-sh`) and `browsers-prims-sh` are also Workers. A prior `prim-web` PR prepared the website for Cloudflare Pages.
 
 Cloudflare now supports Worker-hosted static assets and full-stack applications in one deployment. For the rebuilt Foundation Hub, prefer Workers + Static Assets over creating a separate Pages project plus separate API Worker unless a later constraint requires separation.
 
