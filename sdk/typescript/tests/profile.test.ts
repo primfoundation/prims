@@ -89,3 +89,67 @@ test("exports reject representations the same reader cannot reopen before creati
     assert.equal(existsSync(target), false);
   } finally { rmSync(root, {recursive: true, force: true}); }
 });
+
+test("coding-agent harness template, evidence and recovery validate without granting authority", () => {
+  const library = new ProfileLibrary();
+  const kit = library.list().find(k => k.profile_id === "primfoundation/coding-agent-harness")!;
+  assert.ok(kit);
+  assert.equal(kit.version, "0.1.0-dev.1");
+  assert.equal(kit.authority_file, "harness.json");
+  const pin = library.pin(kit);
+  const source = new URL("../../../profiles/coding-agent-harness/", import.meta.url);
+  const template = JSON.parse(readFileSync(new URL("template.json", source), "utf8"));
+  const example = JSON.parse(readFileSync(new URL("examples/minimal/harness.json", source), "utf8"));
+  const schema = JSON.parse(readFileSync(new URL("schema/record.schema.json", source), "utf8"));
+  assert.deepEqual(kit.template, template);
+  assert.deepEqual(kit.schema, schema);
+  assert.deepEqual(library.validate(pin, template), []);
+  assert.deepEqual(library.validate(pin, example), []);
+  assert.equal(library.create(pin).status, "draft");
+  const draft = structuredClone(template);
+  draft.extension = { caller_owned: true };
+  assert.deepEqual(library.create(pin, draft).extension, draft.extension);
+
+  for (const [field, bad] of [["profile", "other/harness"], ["profile_version", "1.0.0"], ["kind", "tool-evaluation"]]) {
+    assert.ok(library.validate(pin, { ...example, [field as string]: bad }).length, String(field));
+  }
+  for (const collection of ["capabilities", "components", "capability_links", "evidence", "evaluations", "evaluation_evidence", "observations", "incidents", "procedures", "changes", "verifications"]) {
+    const duplicate = structuredClone(example);
+    duplicate[collection].push(structuredClone(duplicate[collection][0]));
+    assert.ok(library.validate(pin, duplicate).some(p => p.rule === "duplicate_id"), collection);
+  }
+  for (const [collection, field] of [
+    ["capability_links", "component_id"], ["capability_links", "capability_id"],
+    ["evaluations", "subject"], ["evaluations", "evidence_id"],
+    ["evaluation_evidence", "evaluation_id"], ["evaluation_evidence", "evidence_id"],
+    ["observations", "subject"], ["observations", "evidence_id"],
+    ["incidents", "subject"], ["incidents", "evidence_id"],
+    ["changes", "incident_id"], ["changes", "procedure_id"], ["changes", "evidence_id"],
+    ["verifications", "change_id"], ["verifications", "evidence_id"],
+  ]) {
+    const dangling = structuredClone(example);
+    dangling[collection][0][field] = "missing";
+    assert.ok(library.validate(pin, dangling).some(p => p.rule === "unresolved_reference"), `${collection}.${field}`);
+  }
+  for (const score of [-1, 101, 1.5, "70", null]) {
+    const bad = structuredClone(example);
+    bad.evaluations[0].ratings.confidence = score;
+    assert.ok(library.validate(pin, bad).length, `score ${score}`);
+  }
+  const bad = structuredClone(example);
+  bad.constraints.context.max_tokens = -1;
+  assert.ok(library.validate(pin, bad).length);
+  bad.constraints = {};
+  bad.components[0].status = "approved-to-execute";
+  assert.ok(library.validate(pin, bad).length);
+  const missingEvidence = structuredClone(example);
+  delete missingEvidence.evaluations[0].evidence_id;
+  assert.ok(library.validate(pin, missingEvidence).length);
+  assert.ok(library.validate(pin, { ...template, status: "observed" }).length);
+  const malformed = structuredClone(example);
+  malformed.observations[0].values = [];
+  assert.ok(library.validate(pin, malformed).length);
+  // Structural validity can retain an unverified source and narrowly scoped pass.
+  assert.equal(example.evidence[0].verification, "unverified");
+  assert.equal(example.verifications[0].result, "passed");
+});

@@ -1,0 +1,168 @@
+{
+  "profile": "primfoundation/coding-agent-harness",
+  "profile_version": "0.1.0-dev.1",
+  "kind": "coding-agent-harness",
+  "id": "harness.example.backend-debug",
+  "title": "Synthetic Backend Debugging Harness",
+  "status": "observed",
+  "observed_at": "2026-09-14T20:22:00Z",
+  "environment": {
+    "runtime": {
+      "name": "example-coding-agent",
+      "version": "example",
+      "provider": "example-provider"
+    },
+    "host": {
+      "id": "machine.example.local",
+      "kind": "development-machine"
+    },
+    "workspace": {
+      "id": "workspace.example.backend",
+      "path_hint": "example/backend"
+    }
+  },
+  "constraints": {
+    "context": {
+      "max_tokens": 64000,
+      "max_initial_tool_schema_tokens": 12000
+    },
+    "execution": {
+      "max_turns": 24,
+      "max_duration_seconds": 1800
+    },
+    "policy_as_recorded": "Synthetic read-only policy. This record grants no execution permission."
+  },
+  "capabilities": [
+    {
+      "id": "capability.repository.inspect",
+      "kind": "repository",
+      "access": "read",
+      "status": "enabled"
+    }
+  ],
+  "components": [
+    {
+      "id": "tool.repository",
+      "kind": "tool-provider",
+      "name": "Example Repository Tool",
+      "status": "available",
+      "context_cost": {
+        "estimated_tokens": 800,
+        "basis": "synthetic declared schema estimate"
+      }
+    },
+    {
+      "id": "hook.bookmark",
+      "kind": "hook",
+      "name": "Example Bookmark Hook",
+      "status": "disabled"
+    }
+  ],
+  "capability_links": [
+    {
+      "id": "link.repository.read",
+      "component_id": "tool.repository",
+      "capability_id": "capability.repository.inspect"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "evidence.example",
+      "kind": "user-statement",
+      "claim": "Synthetic example only: the repository tool was useful; the bookmark hook returned an unreadable response; disabling it was followed by a successful local check. None describes a real machine.",
+      "recorded_at": "2026-09-14T20:22:00Z",
+      "verification": "unverified",
+      "source": "urn:example:harness:scenario",
+      "limitations": "Fabricated fixture, not operational evidence."
+    }
+  ],
+  "evaluations": [
+    {
+      "id": "evaluation.repository",
+      "subject": "tool.repository",
+      "recorded_at": "2026-09-14T20:22:00Z",
+      "scope": {
+        "task_kind": "backend-debugging",
+        "environment": "synthetic-development",
+        "evaluator": "example-person"
+      },
+      "ratings": {
+        "popularity": 80,
+        "importance": 90,
+        "liking": 65,
+        "disliking": 10,
+        "task_fitness": 88,
+        "confidence": 70
+      },
+      "method": "Synthetic 0-100 illustrative ratings; no adoption data measured.",
+      "limitations": "Not suitable for comparing real tools.",
+      "evidence_id": "evidence.example"
+    }
+  ],
+  "evaluation_evidence": [
+    {
+      "id": "link.rating.evidence",
+      "evaluation_id": "evaluation.repository",
+      "evidence_id": "evidence.example",
+      "relation": "qualifies"
+    }
+  ],
+  "observations": [
+    {
+      "id": "observation.context",
+      "subject": null,
+      "kind": "context-surface",
+      "observed_at": "2026-09-14T20:22:00Z",
+      "values": {
+        "estimated_initial_context_tokens": 18400,
+        "estimated_tool_schema_tokens": 800
+      },
+      "units": "tokens",
+      "evidence_id": "evidence.example",
+      "verification": "unverified"
+    }
+  ],
+  "incidents": [
+    {
+      "id": "incident.hook",
+      "subject": "hook.bookmark",
+      "summary": "Synthetic unreadable Stop hook response. Cause remains unproven.",
+      "recorded_at": "2026-09-14T20:22:00Z",
+      "status": "mitigated",
+      "evidence_id": "evidence.example"
+    }
+  ],
+  "procedures": [
+    {
+      "id": "procedure.disable",
+      "title": "Propose disabling the optional hook",
+      "recommendation": "Record the registration, back up configuration, obtain separate authorization, then disable only the named hook.",
+      "preconditions": "Confirm exact host, configuration, ownership, and absence of a dependent active workflow.",
+      "authority_as_recorded": null,
+      "rollback": "Restore the specific registration from the backup while preserving later edits.",
+      "verification_plan": "Parse configuration, inspect the loaded runtime and reproduce the failing stop operation."
+    }
+  ],
+  "changes": [
+    {
+      "id": "change.disable",
+      "incident_id": "incident.hook",
+      "procedure_id": "procedure.disable",
+      "summary": "Synthetic hook registration disabled; original cause not established.",
+      "recorded_at": "2026-09-14T20:22:00Z",
+      "status": "applied",
+      "authority_as_recorded": "Hypothetical scenario authorization; not an instruction to the reader.",
+      "evidence_id": "evidence.example"
+    }
+  ],
+  "verifications": [
+    {
+      "id": "verification.configuration",
+      "change_id": "change.disable",
+      "recorded_at": "2026-09-14T20:22:00Z",
+      "result": "passed",
+      "scope": "Synthetic configuration parse only; loaded runtime and error resolution not established.",
+      "evidence_id": "evidence.example"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "profile": "primfoundation/coding-agent-harness",
+  "profile_version": "0.1.0-dev.1",
+  "kind": "coding-agent-harness",
+  "id": "harness.new",
+  "title": "Untitled coding-agent harness",
+  "status": "draft",
+  "observed_at": null,
+  "environment": {
+    "runtime": {
+      "name": null,
+      "version": null,
+      "provider": null
+    },
+    "host": {
+      "id": null,
+      "kind": null
+    },
+    "workspace": {
+      "id": null,
+      "path_hint": null
+    }
+  },
+  "constraints": {},
+  "capabilities": [],
+  "components": [],
+  "capability_links": [],
+  "evidence": [],
+  "evaluations": [],
+  "evaluation_evidence": [],
+  "observations": [],
+  "incidents": [],
+  "procedures": [],
+  "changes": [],
+  "verifications": []
+}

@@ -169,6 +169,13 @@
       "description": "Period series + proof for a measure. Receipt / connector backed; never sheet literals as authority.",
       "okf": false,
       "status": "emerging"
+    },
+    {
+      "name": "coding-agent-harness",
+      "repo": "primfoundation/prim",
+      "description": "A durable, evidence-aware knowledge pack for coding-agent environments: runtime, capabilities, constraints, evaluations, operational observations, incidents, and recovery.",
+      "okf": false,
+      "status": "emerging"
     }
   ],
   "tools": [
